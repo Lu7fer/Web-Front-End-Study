@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>border-radius实践</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+        }
+        
+        .radius {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 35% 100% 0% 100%/35% 100% 0% 100%;
+            margin: 0px;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="margin-top: 50px; text-align: center;">
+        <div style="width: 50px;height: 50px; display: inline-block;position: fixed; border-radius: 50%;z-index: 10;margin-top: 177px;margin-left: 177px;">
+            <img style="width: 50px;height: 50px; border-radius: 50%;" src="./common-img/pic_050101.jpg" alt="图片">
+        </div>
+
+        <div class="radius"><img style="transform:rotate( 0deg) ;" class="radius" src="./common-img/pic_050101.jpg" alt="图片"></div>
+        <div class="radius"><img style="transform:rotate( 90deg) ;" class="radius" src="./common-img/pic_050101.jpg" alt="图片"></div><br>
+        <div class="radius"><img style="transform:rotate( -90deg) ;" class="radius" src="./common-img/pic_050101.jpg" alt="图片"></div>
+        <div class="radius"><img style="transform:rotate( 180deg) ;" class="radius" src="./common-img/pic_050101.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>

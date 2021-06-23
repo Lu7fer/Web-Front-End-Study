@@ -1,0 +1,378 @@
+<!doctype html>
+<!--
+	Itsy by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
+<html class="home blog no-js" lang="zh-CN">
+<head>
+    <title>Contact Me - CYttrium's Site</title>
+    <meta charset="UTF-8"/>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" id="lt-ie9-css" href="ie.css" type="text/css" media="screen"/>
+    <![endif]-->
+    <script src='js/jquery-3.0.0.min.js'></script>
+    <script src='js/jquery.slim.min.js'></script>
+    <script src='js/jquery-migrate-3.0.1.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/bootstrap.bundle.min.js'></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="print.css" type="text/css" media="print"/>
+    <link rel="stylesheet" href="./css/addon.css" type="text/css"/>
+    <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap-grid.min.css"> -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="home sticky-menu sidebar-off" id="top">
+
+<header class="header">
+    <div class="header-wrap">
+        <div class="logo plain logo-left">
+            <div class="site-title">
+                <a href="index.html" title="Go to Home">Yttrium'Site</a>
+            </div>
+        </div>
+        <!-- /logo -->
+
+        <nav id="nav" role="navigation">
+            <div class="table">
+                <div class="table-cell">
+                    <ul id="menu-menu-1">
+                        <li class="menu-item">
+                            <a href="./index.html">主页</a></li>
+                        <li class="menu-item">
+                            <a href="./about.html">关于我</a></li>
+                        <li class="menu-item">
+                            <a href="./catalog.html">文章</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="./articles/Microsoft-Office.html">Microsoft Office</a></li>
+                                <li class="menu-item">
+                                    <a href="./articles/How-The-Economic-Machine-Works.html">经济机器是怎样运行的</a></li>
+                                <li class="menu-item">
+                                    <a href="./articles/MicroKMS.html">MicroKMS</a></li>
+                                <li class="menu-item">
+                                    <a href="./articles/Front-End-Learning.html">Web前端学习</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./blog.html">博客</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="./Different-Language.html">不同的编程语言</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./prototype.html">原型</a></li>
+                        <li class="menu-item">
+                            <a href="./contact.html">联系我</a></li>
+                        <li class="menu-inline menu-item">
+                            <a title="Twitter" href="https://twitter.com/cyttrium1">
+                                <i class="fa fa-twitter"></i><span class="i">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="menu-inline menu-item">
+                            <a title="Facebook" href="https://www.facebook.com/yttrium.ch">
+                                <i class="fa fa-facebook"></i><span class="i">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="menu-inline menu-item">
+                            <a title="Instagram" href="https://www.instagram.com/c_yttrium/">
+                                <i class="fa fa-instagram"></i><span class="i">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <a href="#nav" class="menu-trigger"><i class="fa fa-bars"></i></a>
+
+        <!--        <a href="#topsearch" class="search-trigger"><i class="fa fa-search"></i></a>-->
+    </div>
+</header>
+
+
+<div class="wrap full-wrap">
+    <div class="main-wrap">
+
+        <section class="main">
+            <article class="post page">
+
+                <div class="inner">
+                    <div class="post-content" id="login">
+                        <h1>Login</h1>
+                        <p>没有账号? <a onclick="switchTab('register');">点击切换注册页面</a></p>
+                        <form id="login_form">
+                            <p>
+                                <input required min="5" max="11" pattern="1[0-9]{10}|[0-9]{5}|[0-9]{7}|0[0-9]{11,12}"
+                                       type="text" name="userid" value="" size="40" placeholder="账号/手机号">
+                            </p>
+                            <p>
+                                <input required min="8" max="32" type="password" name="password" value="" size="40"
+                                       placeholder="密码">
+                            </p>
+                            <p>
+                                <input required type="text" name="valid" value="" style="width: 15%" placeholder="验证码">
+                                <!--<span style="padding: 1em 0.75em;border: solid rgba(0,0,0,0.2) 2px">获取验证码</span>-->
+                                <a class="button small grey" href="javascript:void(0)" style="padding: 0.5em 1.5em;">获取验证码</a>
+                                <!--<span class="status oops" style="width: 20%">获取验证码</span>-->
+                            </p>
+                            <p class="form-submit"><input type="submit" value="登录"></p>
+                        </form>
+                    </div>
+                    <div class="post-content" id="register" hidden="hidden">
+                        <h1>Register</h1>
+                        <p>已有账号? <a onclick="switchTab('login');">点击切换登录页面</a></p>
+
+                        <form id="register_form">
+
+                            <div class="form-group">
+                                <!--<label for="exampleInputEmail1">Email address</label>-->
+                                <input type="text" class="form-control"
+                                       aria-describedby="PhoneHelp" required min="5" max="11"
+                                       pattern="1[0-9]{10}|[0-9]{5}|[0-9]{7}|0[0-9]{11,12}"
+                                       type="text" name="userid" value="" size="40" placeholder="手机号">
+                                <small id="PhoneHelp" class="form-text text-muted">我们不会将你的手机号泄露给任何人.</small>
+                            </div>
+                            <div class="form-group">
+                                <!--                            <label for="exampleInputPassword1">密码</label>-->
+                                <input required min="8" max="32" type="password" name="password" value="" size="40"
+                                       class="form-control"
+                                       placeholder="请输入密码">
+                            </div>
+                            <div class="form-group">
+                                <!--                            <label for="exampleInputPassword2">Password</label>-->
+
+                                <input required min="8" max="32" type="password" name="password" value="" size="40"
+                                       class="form-control"
+                                       placeholder="再次输入密码"></div>
+
+                            <div class="form-group mb-2">
+                                <label for="staticEmail2" class="sr-only">Email</label>
+                                <input pattern=".+@.+\..+" required type="text"
+                                       class="form-control-plaintext form-control"
+                                       style="width: 50%;display: inline-block"
+                                       id="staticEmail2" placeholder="请输入你的邮箱">
+                                <button type="button" class="btn btn-primary mb-2"
+                                        style="margin-left: 3px;font-size: 16px">
+                                    验证邮箱
+                                </button>
+                                <small id="EmailHelp" class="form-text text-muted">我们将会发送一份包含验证地址的邮件至您的邮箱.</small>
+                            </div>
+                            <strong><label for="exampleRadios1">选择您的性别</label></strong><br>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                                       style="margin: 0px 0px 5px 0px;">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    男
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+                                       style="margin: 0px 0px 5px 0px;">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    女
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                                       style="margin: 0px 0px 5px 0px;" checked>
+                                <label class="form-check-label" for="exampleRadios3">
+                                    Prefer not to say
+                                </label>
+                            </div>
+                            <br>
+                            <strong><label for="exampleFormControlFile1">爱好</label></strong><br/>
+                            <span class="one_half">
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">科技</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">金融</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">体育</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox4">阅读</label>
+                            </div>
+                        </span>
+                            <span class="one_half last">
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" id="inlineCheckbox5" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox5">动漫</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox6" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox6">军事</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox7" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox7">旅游</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="inlineCheckbox8" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox8">明星</label>
+                            </div>
+                        </span>
+
+
+                            <div class="form-group">
+                                <strong><label for="exampleFormControlFile1">选择你的头像</label></strong>
+                                <input type="file" class="form-control-file" style="  height: calc(1.5em + 0.75rem + 2px);
+                                    padding: 0.375rem 0.75rem;  font-size: 1rem;  font-weight: 400;   color: #495057;  background-color: #fff;
+                                    background-clip: padding-box; border-radius: 0.25rem; transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;"
+                                       id="exampleFormControlFile1">
+                            </div>
+
+                            <!--                        <p>-->
+                            <!--                        <div class="input-group">-->
+                            <!--                            <div class="input-group-prepend">-->
+                            <!--                                <span class="input-group-text" style="font-size: inherit">First and last name</span>-->
+                            <!--                            </div>-->
+                            <!--                            <input type="text" aria-label="First name" class="form-control">-->
+                            <!--                            <input type="text" aria-label="Last name" class="form-control">-->
+                            <!--                        </div>-->
+                            <!--                        </p>-->
+                            <!--                        <p>-->
+                            <!--                            <input required min="5" max="11" pattern="1[0-9]{10}|[0-9]{5}|[0-9]{7}|0[0-9]{11,12}"-->
+                            <!--                                   type="text" name="userid" value="" size="40" placeholder="账号/手机号">-->
+                            <!--                        </p>-->
+                            <!--                        <p>-->
+                            <!--                            <input required min="8" max="32" type="password" name="password" value="" size="40"-->
+                            <!--                                   placeholder="密码">-->
+                            <!--                        </p>-->
+                            <!--                        <p>-->
+                            <!--                            <input required min="8" max="32" type="password" name="password" value="" size="40"-->
+                            <!--                                   placeholder="再次输入密码">-->
+                            <!--                        </p>-->
+                            <!--                        <p>-->
+
+                            <!--                        </p>-->
+                            <!--                        <p>-->
+                            <!--                            <input required type="text" name="valid" value="" style="width: 15%" placeholder="验证码">-->
+                            <!--                            &lt;!&ndash;<span style="padding: 1em 0.75em;border: solid rgba(0,0,0,0.2) 2px">获取验证码</span>&ndash;&gt;-->
+                            <!--                            <a class="button small grey" href="javascript:void(0)"-->
+                            <!--                               style="padding: 0.5em 1.5em;">获取验证码</a>-->
+                            <!--                            &lt;!&ndash;<span class="status oops" style="width: 20%">获取验证码</span>&ndash;&gt;-->
+                            <!--                        </p>-->
+                            <p>
+                            <div class="form-group ">
+                                <input type="checkbox" style="margin-bottom: 8px;" checked>
+                                <span style="font-size: 14px;">同意<a href="javascript:void(0)">《用户协议》</a></span>
+
+                            </div>
+                            </p>
+                            <p class="form-submit"><input type="submit" value="注册"></p>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <div class="border"></div>
+
+        </section>
+    </div><!-- /main-wrap -->
+</div><!-- /wrap -->
+<script>
+    function switchTab(from) {
+        if (from === 'login') {
+            document.getElementById('register').setAttribute('hidden', 'hidden');
+            document.getElementById('login').removeAttribute('hidden');
+        } else if (from === 'register') {
+            document.getElementById('login').setAttribute('hidden', 'hidden');
+            document.getElementById('register').removeAttribute('hidden');
+        }
+    }
+</script>
+
+<div class="footer-widgets widget-count-4">
+    <div class="wrap">
+        <div class="mt-about-you-widget">
+            <div class="widget footer">
+                <img class="mt-about-avatar" src="images/transparent.png" alt=""/>
+                <h4>Yttrium</h4>
+                <div class="mt-about-bio">
+                    <p>Hi, my name is Yttrium and I&#039;m a programmer. I love life and more than anything in the
+                        whole wide world, I love learning. Oh and did I mention, I quite like blogging?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="widget footer">
+            <h4>Recent Posts</h4>
+            <ul>
+                <li>
+                    <a href="#content">最美的瞬间</a>
+                </li>
+                <li>
+                    <a href="#carouselExampleIndicators">不同的编程语言</a>
+                </li>
+                <li>
+                    <a href="#another">查看我的另一个网页</a>
+                </li>
+                <li>
+                    <a href="#SOSEC">第一届 中国开源教育研讨会</a>
+                </li>
+                <li>
+                    <a href="#fight">纸飞机</a>
+                </li>
+            </ul>
+        </div>
+        <div class="widget footer">
+            <h4>Categories</h4>
+            <ul>
+                <li class="cat-item cat-item-6">
+                    <a href="./catalog.html">文章</a>
+                </li>
+                <li class="cat-item cat-item-7">
+                    <a href="./blog.html">博客</a>
+                </li>
+                <li class="cat-item cat-item-8">
+                    <a href="./prototype.html">原型</a>
+                </li>
+                <li class="cat-item cat-item-9">
+                    <a href="./contact.html">联系我</a>
+                </li>
+            </ul>
+        </div>
+        <div class="widget footer">
+            <h4>Gallery</h4>
+            <div class="textwidget">
+                <img src="images/gallery.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-wrap">
+        <div id="footer-text">&copy; 2021 Lu7fer. Made by <a href="https://freehtml5.co" target="_blank">Yttrium</a>.
+        </div>
+
+        <a href="#top" id="btt">Top <i class="fa fa-chevron-up"></i></a>
+        <div style="text-align: center;text-decoration: underline">
+            <a href="https://icp.gov.moe/?keyword=20210688" title="萌ICP备20210688号">萌ICP备20210688号</a></div>
+    </div>
+</footer>
+
+
+<script>var ie9 = false;</script>
+<!--[if lte IE 9 ]>
+<script> var ie9 = true; </script>
+<![endif]-->
+<script src="js/global-plugins.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

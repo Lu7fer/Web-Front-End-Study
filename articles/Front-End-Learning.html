@@ -1,0 +1,938 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Catalog - Yttrium's Site</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是一个个人网站, 我将会分享一些有趣的东西在上面, 你也许能在这里找到一些需要的东西"/>
+    <meta name="keywords" content="personal site 下载 分享 想法 个人博客"/>
+    <meta charset="UTF-8"/>
+    <!--[if lte IE 8]>
+    <script src="../css/ie/html5shiv.js"></script><![endif]-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.dropotron.min.js"></script>
+    <script src="./js/skel.min.js"></script>
+    <script src="../js/skel-layers.min.js"></script>
+    <script src="../js/main.js" charset="UTF-8"></script>
+    <script src="../js/init.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <noscript>
+        <link rel="stylesheet" href="../css/skel.css"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/style-wide.css"/>
+    </noscript>
+    <style>
+        a:hover {
+            color: #f08c79;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            let show = document.getElementById(id);
+            if (show.hasAttribute('hidden')) {
+                show.removeAttribute('hidden');
+            } else {
+                show.setAttribute('hidden', 'hidden');
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div>
+    <!-- Header -->
+    <div id="header" class="skel-panels-fixed" id="top">
+        <div id="logo">
+            <h1 style="font-size: 1.5em;"><a href="../index.html">Yttrium's Site</a></h1>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li class="active"><a href="../index.html">主页</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- Wrapper -->
+<!-- <div class="wrapper style1"> -->
+<div id="main-content">
+    <!-- StuID=2019407229 -->
+    <div class="wrapper style1">
+        <style type="text/css">
+            #content h2 {
+                color: rgb(230, 26, 152);
+            }
+
+            h3 {
+                color: #2aabd2;
+            }
+
+            h3 div {
+                margin-left: 2em !important;
+            }
+
+            h4 {
+                margin-left: 2em !important;
+                color: #419641;
+            }
+
+            h4 div {
+                margin-left: 2em !important;
+            }
+
+            .p {
+                font-size: 1em;
+                text-indent: 2em;
+                margin-left: 2em;
+            }
+        </style>
+        <div id="page" class="container">
+            <h3 class="back"><a href="../catalog.html"><span
+                    class="icon style2 fa-arrow-left "></span>返回目录</a></h3>
+            <div class="row">
+                <div class="10u">
+                    <section>
+                        <header class="major">
+                            <h2 class="notransform">Web前端学习心得</h2>
+                            <span class="byline">Web前端开发技术课堂学习笔记 <span class="notransform"
+                                                                       style="color: #aa00ff;">StuID:2019407229</span></span>
+                            <span class="time">时间: 3/17/2021起</span>
+                        </header>
+                    </section>
+                    <div id="content">
+                        <h2 id="03-17" onclick="showContent('03/17')">3月17日</h2>
+                        <hr>
+                        <div id="03/17" hidden="hidden">
+                            <h3>HTML文档结构:</h3>
+                            <div class="code">
+                                &lt;html&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                                <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                                <br> &lt;/html&gt; <br>
+                            </div>
+                            <h3>p标签</h3>
+                            <div class="row next">
+                                <div class="6u">
+                                    <p>p(段落)标签:
+                                        <code>
+                                            &lt;p&gt;这是一个段落 &lt;/p&gt;
+                                        </code>
+                                    </p>
+                                </div>
+                                <div class="6u">
+                                    <p>这是一个段落</p>
+                                </div>
+                            </div>
+                            <h3>title标签</h3>
+                            <div class="code">
+                                &lt;title&gt;这是网页的标题, 显示在浏览器的标签上&lt;/title&gt;
+                            </div>
+                            <h3>标记语法</h3>
+                            <p>HTML标记是由尖括号包围的关键词，用于说明指定内容的外貌和特征，也称为标签（Tag）。&lt;html&gt;、&lt;head&gt;、&lt;body&gt;等都是标记。标记通常分为单个标记和成对标记两种类型。
+                            </p>
+                            <h4>一般标签</h4>
+                            <p>由于有开始符号和结束符号，因此可以在内部插入其他标签或文字</p>
+                            <h4>自闭合标签</h4>
+                            <p>由于只有开始符号而没有结束符号，因此不可以在内部插入标签或文字。</p>
+                            <h3>meta标签</h3>
+                            <p>META标记用来描述一个HTML网页文档的属性，也称为元信息（meta-information），这些信息并不会显示在浏览器的页面中。
+                                例如作者、日期和时间、网页描述、关键词、页面刷新等。该标记位于文档的头部(其属性形式是“名称/值”对)。
+                                <br>
+                            </p>
+                            基本语法<br>
+                            <code>&lt;meta name="" content=""&gt; <br></code>
+                            <code> &lt;meta http-equiv="" content=""&gt; <br>
+                            </code>
+
+                            <h4>属性说明</h4>
+                            <p>meta属性主要分为两组。</p>
+                            <h3>标题标签</h3>
+                            <p>HTML提供了6个等级的标签，即：h1、h2、h3、h4、h5、h6 标题标签语义：作为标题使用，并且依据重要性递减，
+                            </p>
+                            <h4>语法:</h4>
+                            <div class="code">
+                                &lt;hX&gt; 内容 &lt;/hX&gt; &lt;!--其中X为1-6--&gt;
+                            </div>
+                            <h3>注释</h3>
+                            <p>HTML代码中添加注释的方法有2种：<br>
+                            <div class="tab">
+                                <code>&lt;!-- 注释信息 --&gt;</code> <br>
+                                <code>&lt;comment&gt;注释信息&lt;/comment&gt;</code>
+                                <p>通常使用前一种</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <h2 id="03-18" onclick="showContent('03/18')">3月18日</h2>
+                        <hr>
+                        <div id="03/18" hidden="hidden">
+                            <h3>a标签</h3>
+                            <p>a标签(anchor)定义一个超链接, 点击a标签内的元素可以跳转到a标签所定义的链接地址</p>
+                            <h4>语法</h4>
+                            <div class="code">
+                                &lt;a href="<a href="http://pac.lu7fer.tk/">http://pac.lu7fer.tk/</a>" &gt;点击跳转&lt;/a&gt;
+                            </div>
+                            <h3>属性</h3>
+                            <p>href属性定义链接地址, 标签内部放需要加入超链接的元素</p>
+                            <h3>img标签</h3>
+                            <p>在 HTML 中，图像由&lt;img&gt; 标签定义。<br> &lt;img&gt; 是空标签，意思是说，它只包含属性，并且没有闭合标签。
+                                要在页面上显示图像，你需要使用源属性（src）。src 指 "source"。源属性的值是图像的 URL 地址。
+                            </p>
+                            <p>下图的标签:<code>&lt;img src="./images/articles/web-front-dev.jpg" style="width:
+                                100%;"&gt;</code>
+                            </p>
+                            <img src="./images/articles/Web前端学习心得/web-front-dev.jpg" style="width: 100%;">
+                            <h3>标签的嵌套</h3>
+                            <p>标签与标签可以嵌套, 但不能交叉</p>
+                            <div class="code">
+                                &lt;h3&gt;&lt;i&gt;这是错误的交叉嵌套的代码&lt;/h3&gt;&lt;/i&gt; <br> &lt;h3&gt;&lt;i&gt;这是正确嵌套不交叉的代码&lt;/i&gt;&lt;/h3&gt;
+                            </div>
+                            <h4>图片与链接的嵌套</h4>
+                            <p>下面是图片与链接嵌套形成图片链接的标签形式和呈现出来的样子</p>
+                            <div class="code">
+                                &lt;a href="."&gt;&lt;img src="./images/wechat-qrcode.png" class="code" style="width:
+                                200px; padding: 5px;"&gt;&lt;/a&gt;
+                            </div>
+                            <br>
+                            <a href="."><img src="./images/wechat-qrcode.png" class="code"
+                                             style="width: 200px; padding: 5px;"></a>
+                            <hr>
+                        </div>
+                        <h2 id="03-24" onclick="showContent('03/24')">3月24日</h2>
+                        <hr>
+                        <div id="03/24" hidden="hidden">
+                            <h3>CSS</h3>
+                            <ul class="default">
+                                <li>CSS 指层叠样式表 (Cascading Style Sheets)</li>
+                                <li> 多个样式定义可层叠为一个</li>
+                                <li>样式定义如何显示 HTML 元素</li>
+                                <li>样式通常存储在样式表中</li>
+                                <li>把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题</li>
+                                <li>外部样式表可以极大提高工作效率</li>
+                                <li>外部样式表通常存储在 CSS 文件中</li>
+                            </ul>
+                            <h4>引入CSS</h4>
+                            <div class="p">有多种方式可以引入CSS <br>1. 行内样式, 也叫做内联样式 语法:<code style="color: #cc2266;">&lt;div
+                                style="color:red;"&gt;这是红色的字&lt;/div&gt;</code><br> 2. 内部样式, 语法: <code>&lt;style&gt;h4 {
+                                margin-left: 2em; color: #419641;}&lt;/style&gt;</code> <br> 3. 外部样式, 语法:
+                                <code>&lt;link rel="stylesheet" href="./style.css"&gt;</code>
+                            </div>
+                            <h4>多重样式优先级</h4>
+                            <div class="p">一般情况下，优先级如下：<br>
+                                <strong>（内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style
+                                    sheet
+                                    &gt; 浏览器默认样式</strong>
+                            </div>
+                            <h4>CSS 盒子模型(Box Model)</h4>
+                            <div class="p">
+                                CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。 盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+                                下面的图片说明了盒子模型(Box Model)：
+                            </div>
+                            <img src="./images/articles/Web前端学习心得/box-model.gif" style="width: 300px;margin-left: 2em;">
+                            <hr>
+                            <h3>选择器</h3>
+                            <h4>id 选择器</h4>
+                            <div class="p">id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。
+                                以下的样式规则应用于元素属性 id="para1":
+                            </div>
+                            <div class="code">
+                                #para1 <br> { <br> &nbsp;&nbsp;&nbsp;&nbsp;text-align:center; <br> &nbsp;&nbsp;&nbsp;&nbsp;color:red;
+                                <br> }
+                            </div>
+                            <h4>class 选择器</h4>
+                            <div class="p">class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。 class
+                                选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示： 在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。
+                            </div>
+                            <div class="code">
+                                .center {text-align:center;}
+                            </div>
+                            <div class="p">也可以指定特定的HTML元素使用class。 在以下实例中, 所有的 p 元素使用 class="center" 让该元素的文本居中:</div>
+                            <div class="code">
+                                p.center {text-align:center;}
+                            </div>
+                            <hr>
+                        </div>
+                        <h2 id="03-25" onclick="showContent('03/25')">3月25日</h2>
+                        <hr>
+                        <div id="03/25" hidden="hidden">
+                            <h3>HTML 符号实体</h3>
+                            <div class="p">
+                                在 HTML 中，某些字符是预留的。 在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。 如果希望正确地显示预留字符，我们必须在
+                                HTML 源代码中使用字符实体（character entities）。<br> 如需显示小于号，我们必须这样写：
+                                <strong>&amp;lt;</strong> 或 <strong>&amp;#60;</strong>或
+                                <strong>&amp;#060;</strong>
+                            </div>
+                            <h4>不间断空格(Non-breaking Space)</h4>
+                            <div class="p">
+                                HTML 中的常用字符实体是不间断空格(&nbsp;)。 浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 10 个空格，在显示该页面之前，浏览器会删除它们中的 9
+                                个。如需在页面中增加空格的数量，您需要使用
+                                <strong>&amp;nbsp;</strong> 字符实体。
+                            </div>
+                            <h4 onclick="showContent('HTML-character-entities')"
+                                style="color: rgb(230, 26, 152); text-decoration: underline;">HTML字符实体</h4>
+                            <div class="p">
+                                实体名称对大小写敏感！
+                            </div>
+                            <div id="HTML-character-entities" hidden="hidden" class="table">
+                                <style type="text/css">
+                                    tr {
+                                        display: table-row;
+                                    }
+
+                                    td {
+                                        border-bottom-width: 1px;
+                                    }
+
+                                    th,
+                                    td {
+                                        font-weight: normal;
+                                        padding: 4px;
+                                        vertical-align: middle;
+                                        border: 1px solid rgba(0, 0, 0, 0.1);
+                                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                                    }
+                                </style>
+                                <table style="text-align: center;border: 1px solid rgba(0,0,0,0.3); font-size: 0.875em;">
+                                    <tbody>
+                                    <tr style="background-color: rgba(0,0,0,0.1); word-break: keep-all;">
+                                        <th>显示结果</th>
+                                        <th>描述</th>
+                                        <th>实体名称</th>
+                                        <th>实体编号</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>空格</td>
+                                        <td>&amp;nbsp;</td>
+                                        <td>&amp;#160;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&lt;</td>
+                                        <td>小于号</td>
+                                        <td>&amp;lt;</td>
+                                        <td>&amp;#60;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&gt;</td>
+                                        <td>大于号</td>
+                                        <td>&amp;gt;</td>
+                                        <td>&amp;#62;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&amp;</td>
+                                        <td>和号</td>
+                                        <td>&amp;amp;</td>
+                                        <td>&amp;#38;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>"</td>
+                                        <td>引号</td>
+                                        <td>&amp;quot;</td>
+                                        <td>&amp;#34;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>'</td>
+                                        <td>撇号&nbsp;</td>
+                                        <td>&amp;apos; (IE不支持)</td>
+                                        <td>&amp;#39;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>￠</td>
+                                        <td>分</td>
+                                        <td>&amp;cent;</td>
+                                        <td>&amp;#162;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>£</td>
+                                        <td>镑</td>
+                                        <td>&amp;pound;</td>
+                                        <td>&amp;#163;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>¥</td>
+                                        <td>人民币/日元</td>
+                                        <td>&amp;yen;</td>
+                                        <td>&amp;#165;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>€</td>
+                                        <td>欧元</td>
+                                        <td>&amp;euro;</td>
+                                        <td>&amp;#8364;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>§</td>
+                                        <td>小节</td>
+                                        <td>&amp;sect;</td>
+                                        <td>&amp;#167;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>©</td>
+                                        <td>版权</td>
+                                        <td>&amp;copy;</td>
+                                        <td>&amp;#169;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>®</td>
+                                        <td>注册商标</td>
+                                        <td>&amp;reg;</td>
+                                        <td>&amp;#174;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>™</td>
+                                        <td>商标</td>
+                                        <td>&amp;trade;</td>
+                                        <td>&amp;#8482;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>×</td>
+                                        <td>乘号</td>
+                                        <td>&amp;times;</td>
+                                        <td>&amp;#215;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>÷</td>
+                                        <td>除号</td>
+                                        <td>&amp;divide;</td>
+                                        <td>&amp;#247;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr>
+                        </div>
+                        <h2 id="03-31" onclick="showContent('03/31')">3月31日</h2>
+                        <div id="03/31" hidden="hidden">
+                            <h3>画一个盒子模型</h3>
+                            <div class="row" style="margin-left: 2em !important;">
+                                <div style="text-align: center;background-color: #2AABD2;color: #000000;padding: 0.75em;"
+                                     class="5u">
+                                    margin
+                                    <div style="text-align: center;background-color: #666666;padding: 0.5em;margin-top: 0.75em;">
+                                        border
+                                        <div style="text-align: center;background-color: #419641;padding: 0.75em;margin-top: 0.5em;">
+                                            padding
+                                            <div style="text-align: center;background-color: #FFFFFF88;margin-top: 0.75em;border: 1.5px dashed rgba(0,0,0,0.8);">
+                                                content<br/>
+                                                <a href="https://baike.baidu.com/item/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%BE%B7%E6%8B%89%E8%B4%A1/22698317"
+                                                   target="_blank"><img
+                                                        src="./Web-front-end/box-model-img.jpg" alt="阿尔托莉雅"
+                                                        width="150px"/><br/> 点击图片进入百科
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 id="04-01" onclick="showContent('04/01')">4月01日</h2>
+                        <div id="04/01" hidden="hidden">
+                            <h3>CSS Display</h3>
+                            <div class="p">
+                                display 属性规定是否/如何显示元素。<br> 每个 HTML 元素都有一个默认的 display 值，具体取决于它的元素类型。大多数元素的默认 display 值为
+                                block 或 inline。
+                            </div>
+                            <h4>display: block</h4>
+                            <div class="p">
+                                块级元素总是从新行开始，并占据可用的全部宽度（尽可能向左和向右伸展）。
+                            </div>
+                            <div class="css-border" style="line-height: 1.5; margin-top: 15px;">这个 &lt;div&gt; 元素属于块级元素。
+                            </div>
+                            <h4>display: inline</h4>
+                            <div class="p">内联元素不从新行开始，仅占用所需的宽度。这是段落中的<span class="css-border">行内 &lt;span&gt; 元素</span>。
+                            </div>
+                            <h4>display: inline-block</h4>
+                            <div class="p">
+                                与 display: inline 相比，主要区别在于 display: inline-block 允许在元素上设置宽度和高度。<br> 同样，如果设置了 display:
+                                inline-block，将保留上下外边距/内边距，而 display: inline 则不会。<br> 与 display: block 相比，主要区别在于
+                                display：inline-block 在元素之后不添加换行符，因此该元素可以位于其他元素旁边。
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 id="04-07" onclick="showContent('04/07')">4月07日</h2>
+                        <div id="04/07" hidden="hidden">
+                            <h3>特殊符号实验</h3>
+                            <div class="code">
+                                2&amp;times;2&amp;times;2=2&lt;sup&gt;3&lt;/sup&gt; <br/> Microsoft&amp;reg;
+                                <br/> 《你也懂Flash?》&amp;copy;,中国科学出版社出版
+                                <br/> 6&amp;gt;5一定是逻辑真！
+                                <br/> 你&amp;middot;我是利益共同体
+                                <br/> Dreamweaver&amp;trade;是Adobe公司出品的网页开发工具。
+                                <br/> 我买了一辆小轿车花了10000&amp;pound;，折合人民币89000&amp;yen;啊
+                            </div>
+                            <div>
+                                2&times;2&times;2=2<sup>3</sup> <br/> Microsoft&reg;
+                                <br/> 《你也懂Flash?》&copy;,中国科学出版社出版
+                                <br/> 6&gt;5一定是逻辑真！
+                                <br/> 你&middot;我是利益共同体
+                                <br/> Dreamweaver&trade;是Adobe公司出品的网页开发工具。
+                                <br/> 我买了一辆小轿车花了10000&pound;，折合人民币89000&yen;啊
+                            </div>
+                            <h3>选择器</h3>
+                            <div class="p">
+                                CSS选择器用于选择你想要的元素的样式的模式。
+                            </div>
+                            <h4 style="text-decoration: underline; color: rgb(230, 26, 152);"
+                                onclick="showContent('CSSSelectorTable')">CSS选择器列表</h4>
+                            <div id="CSSSelectorTable" class="table" hidden="hidden">
+                                <table style="text-align: center;border: 1px solid rgba(0,0,0,0.3); font-size: 0.875em;overflow: scroll;">
+                                    <tbody>
+                                    <tr style="background-color: rgba(0,0,0,0.1); word-break: keep-all;text-align: center;">
+                                        <th width="22%">选择器</th>
+                                        <th width="17%">示例</th>
+                                        <th width="56%">示例说明</th>
+                                        <th>CSS</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">.<i>class</i></a></td>
+                                        <td>.intro</td>
+                                        <td>选择所有class="intro"的元素</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">#<i>id</i></a></td>
+                                        <td>#firstname</td>
+                                        <td>选择所有id="firstname"的元素</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">*</a></td>
+                                        <td>*</td>
+                                        <td>选择所有元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i><a href="javascript:void(0)">element</a></i></td>
+                                        <td>p</td>
+                                        <td>选择所有&lt;p&gt;元素</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i><a href="javascript:void(0)">element,element</a></i></td>
+                                        <td>div,p</td>
+                                        <td>选择所有&lt;div&gt;元素和&lt;p&gt;元素</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)"><i>element</i> <i>element</i></a></td>
+                                        <td>div p</td>
+                                        <td>选择&lt;div&gt;元素内的所有&lt;p&gt;元素</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)"><i>element</i>&gt;<i>element</i></a></td>
+                                        <td>div&gt;p</td>
+                                        <td>选择所有父级是 &lt;div&gt; 元素的 &lt;p&gt; 元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)"><i>element</i>+<i>element</i></a></td>
+                                        <td>div+p</td>
+                                        <td>选择所有紧接着&lt;div&gt;元素之后的&lt;p&gt;元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>]</a></td>
+                                        <td>[target]</td>
+                                        <td>选择所有带有target属性元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>=<i>value</i>]</a></td>
+                                        <td>[target=-blank]</td>
+                                        <td>选择所有使用target="-blank"的元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>~=<i>value</i>]</a></td>
+                                        <td>[title~=flower]</td>
+                                        <td>选择标题属性包含单词"flower"的所有元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>|=<i>language</i>]</a></td>
+                                        <td>[lang|=en]</td>
+                                        <td>选择 lang 属性以 en 为开头的所有元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:link</a></td>
+                                        <td>a:link</td>
+                                        <td>选择所有未访问链接</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:visited</a></td>
+                                        <td>a:visited</td>
+                                        <td>选择所有访问过的链接</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:active</a></td>
+                                        <td>a:active</td>
+                                        <td>选择活动链接</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:hover</a></td>
+                                        <td>a:hover</td>
+                                        <td>选择鼠标在链接上面时</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:focus</a></td>
+                                        <td>input:focus</td>
+                                        <td>选择具有焦点的输入元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:first-letter</a></td>
+                                        <td>p:first-letter</td>
+                                        <td>选择每一个&lt;p&gt;元素的第一个字母</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:first-line</a></td>
+                                        <td>p:first-line</td>
+                                        <td>选择每一个&lt;p&gt;元素的第一行</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:first-child</a></td>
+                                        <td>p:first-child</td>
+                                        <td>指定只有当&lt;p&gt;元素是其父级的第一个子级的样式。</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:before</a></td>
+                                        <td>p:before</td>
+                                        <td>在每个&lt;p&gt;元素之前插入内容</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:after</a></td>
+                                        <td>p:after</td>
+                                        <td>在每个&lt;p&gt;元素之后插入内容</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:lang(<i>language</i>)</a></td>
+                                        <td>p:lang(it)</td>
+                                        <td>选择一个lang属性的起始值="it"的所有&lt;p&gt;元素</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)"><i>element1</i>~<i>element2</i></a></td>
+                                        <td>p~ul</td>
+                                        <td>选择p元素之后的每一个ul元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>^=<i>value</i>]</a></td>
+                                        <td>a[src^="https"]</td>
+                                        <td>选择每一个src属性的值以"https"开头的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>$=<i>value</i>]</a></td>
+                                        <td>a[src$=".pdf"]</td>
+                                        <td>选择每一个src属性的值以".pdf"结尾的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">[<i>attribute</i>*=<i>value</i>]</a></td>
+                                        <td>a[src*="runoob"]</td>
+                                        <td>选择每一个src属性的值包含子字符串"runoob"的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:first-of-type</a></td>
+                                        <td>p:first-of-type</td>
+                                        <td>选择每个p元素是其父级的第一个p元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:last-of-type</a></td>
+                                        <td>p:last-of-type</td>
+                                        <td>选择每个p元素是其父级的最后一个p元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:only-of-type</a></td>
+                                        <td>p:only-of-type</td>
+                                        <td>选择每个p元素是其父级的唯一p元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:only-child</a></td>
+                                        <td>p:only-child</td>
+                                        <td>选择每个p元素是其父级的唯一子元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:nth-child(<i>n</i>)</a></td>
+                                        <td>p:nth-child(2)</td>
+                                        <td>选择每个p元素是其父级的第二个子元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:nth-last-child(<i>n</i>)</a></td>
+                                        <td>p:nth-last-child(2)</td>
+                                        <td>选择每个p元素的是其父级的第二个子元素，从最后一个子项计数</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:nth-of-type(<i>n</i>)</a></td>
+                                        <td>p:nth-of-type(2)</td>
+                                        <td>选择每个p元素是其父级的第二个p元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:nth-last-of-type(<i>n</i>)</a></td>
+                                        <td>p:nth-last-of-type(2)</td>
+                                        <td>选择每个p元素的是其父级的第二个p元素，从最后一个子项计数</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:last-child</a></td>
+                                        <td>p:last-child</td>
+                                        <td>选择每个p元素是其父级的最后一个子级。</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:root</a></td>
+                                        <td>:root</td>
+                                        <td>选择文档的根元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:empty</a></td>
+                                        <td>p:empty</td>
+                                        <td>选择每个没有任何子级的p元素（包括文本节点）</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:target</a></td>
+                                        <td>#news:target</td>
+                                        <td>选择当前活动的#news元素（包含该锚名称的点击的URL）</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:enabled</a></td>
+                                        <td>input:enabled</td>
+                                        <td>选择每一个已启用的输入元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:disabled</a></td>
+                                        <td>input:disabled</td>
+                                        <td>选择每一个禁用的输入元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:checked</a></td>
+                                        <td>input:checked</td>
+                                        <td>选择每个选中的输入元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:not(<i>selector</i>)</a></td>
+                                        <td>:not(p)</td>
+                                        <td>选择每个并非p元素的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">::selection</a></td>
+                                        <td>::selection</td>
+                                        <td>匹配元素中被用户选中或处于高亮状态的部分</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:out-of-range</a></td>
+                                        <td>:out-of-range</td>
+                                        <td>匹配值在指定区间之外的input元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:in-range</a></td>
+                                        <td>:in-range</td>
+                                        <td>匹配值在指定区间之内的input元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:read-write</a></td>
+                                        <td>:read-write</td>
+                                        <td>用于匹配可读及可写的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:read-only</a></td>
+                                        <td>:read-only</td>
+                                        <td>用于匹配设置 "readonly"（只读） 属性的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:optional</a></td>
+                                        <td>:optional</td>
+                                        <td>用于匹配可选的输入元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:required </a></td>
+                                        <td>:required</td>
+                                        <td>用于匹配设置了 "required" 属性的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:valid </a></td>
+                                        <td>:valid</td>
+                                        <td>用于匹配输入值为合法的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">:invalid </a></td>
+                                        <td>:invalid</td>
+                                        <td>用于匹配输入值为非法的元素</td>
+                                        <td>3</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 id="04-08" onclick="showContent('04/08')">4月08日</h2>
+                        <div id="04/08" hidden="hidden">
+                            <h3>font-size</h3>
+                            <div class="p">
+                                em: 它是描述相对于应用在当前元素的字体尺寸，所以它也是相对长度单位。一般浏览器字体大小默认为16px，则2em == 32px；
+                            </div>
+                            <div class="p">
+                                rem: rem是根 em（root em）的缩写，rem作用于非根元素时，相对于根元素字体大小；rem作用于根元素字体大小时，相对于其出初始字体大小。
+                            </div>
+                            <div class="p">
+                                绝对长度单位是一个固定的值，它反应一个真实的物理尺寸。绝对长度单位视输出介质而定，不依赖于环境（显示器、分辨率、操作系统等）。常用单位如下:<br> cm 厘米 <br> mm
+                                毫米
+                                <br> in 英寸 (1in = 96px = 2.54cm)<br>
+                            </div>
+                            <h3>font-weight</h3>
+                            <h4>字重</h4>
+                            <div>
+                                字重有100-900(以100递增)等字面值, 也有预定义的值:<br> normal &nbsp;默认值。定义标准的字符。 <br> bold &nbsp;&nbsp;&nbsp;定义粗体字符。
+                                <br> bolder &nbsp;定义更粗的字符。<br> lighter 定义更细的字符。<br>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 id="04-14" onclick="showContent('04/14')">4月14日</h2>
+                        <div id="04/14" hidden="hidden">
+                            <h3 style="color: rgb(230, 26, 152); text-decoration: underline;"><a
+                                    href="./Web-front-end/CV.html" target="_blank">个人简历</a></h3>
+                        </div>
+                        <hr>
+                        <h2 id="04-15" onclick="showContent('04/15')">4月15日</h2>
+                        <div id="04/15" hidden="hidden">
+                            <h3>text-decoration</h3>
+                            <div class="p">
+                                text-decoration 属性规定添加到文本的修饰，下划线、上划线、删除线等。<br> none &nbsp;&nbsp;&nbsp;默认。定义标准的文本。<br>
+                                underline 定义文本下的一条线。<br> overline &nbsp;定义文本上的一条线。<br> line-through 定义穿过文本下的一条线。<br>
+                                blink &nbsp;&nbsp;定义闪烁的文本。(但浏览器不会显示)
+                                <br> inherit &nbsp;规定应该从父元素继承 text-decoration 属性的值。
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 id="04-21" onclick="showContent('04/21')">4月21日, 后面的都鸽了</h2>
+                        <hr>
+                        <div id="04/21" hidden="hidden">
+                            <div class="p">这个课太无聊了, 没兴趣写了<br> HBuild也不行, 不是我看不起国产, 而是用起来真的不好, 代码补全功能总会给我来一些多余的操作,
+                                除了比较轻量, 感觉还没有VSCode好用
+                            </div>
+                        </div>
+                        <div>
+                            <h3 style="color: rgb(230, 26, 152); text-decoration: underline;"><a
+                                    href="./Web-front-end/menu.html" target="_blank">菜单</a></h3><br/>
+                            <h3 style="color: rgb(230, 26, 152); text-decoration: underline;"><a
+                                    href="./Web-front-end/border-radius.html" target="_blank">border-radius</a>
+                            </h3><br/>
+                            <h3 style="color: rgb(230, 26, 152); text-decoration: underline;"><a
+                                    href="./Web-front-end/nine-grid.html" target="_blank">九宫格</a></h3><br/>
+                        </div>
+                    </div>
+                    <div id="sidebar" class="2u">
+                        <section>
+                            <header class="major">
+                                <h2>目录</h2>
+                            </header>
+                            <ul class="default">
+                                <li><a href="#03-17">3月17日</a></li>
+                                <li><a href="#03-18">3月18日</a></li>
+                                <li><a href="#03-24">3月24日</a></li>
+                                <li><a href="#03-25">3月25日</a></li>
+                                <li><a href="#03-31">3月31日</a></li>
+                                <li><a href="#04-01">4月01日</a></li>
+                                <li><a href="#04-07">4月07日</a></li>
+                                <li><a href="#04-08">4月08日</a></li>
+                                <li><a href="#04-14">4月14日</a></li>
+                                <li><a href="#04-15">4月15日</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright -->
+<div id="copyright">
+    <div class="container">
+        <div class="copyright">
+            <!-- <p title="templated.co">Design: <a href="http://templated.co">TEMPLATED</a></p> -->
+            <ul class="icons-main" id="contact">
+                <li title="Twitter"><a href="https://twitter.com/cyttrium1" class="icon style2 fa-twitter"><span
+                        class="label">Twitter</span></a></li>
+                <li title="Facebook"><a href="https://www.facebook.com/yttrium.ch" class="icon style2 fa-facebook"><span
+                        class="label">Facebook</span></a></li>
+                <li title="Tencent QQ"><a
+                        href="https://qm.qq.com/cgi-bin/qm/qr?k=CCAEPGERRQlZnnz-JjVBoNfwoIo4mfIV%26noverify=0"
+                        class="icon style2 fa-qq"><span class="label">QQ</span></a></li>
+                <li title="Gmail"><a href="mailto:cyttrium@gmail.com" class="icon style2 fa-envelope-o"><span
+                        class="label">Email</span></a></li>
+                <li title="Github"><a href="https://github.com/lu7fer" class="icon style2 fa-github"><span
+                        class="label">Github</span></a></li>
+                <li title="Call"><a href="tel:+16145852209" class="icon style2 fa-phone"><span
+                        class="label">Message</span></a></li>
+            </ul>
+            <p title="萌国ICP备案" style="text-decoration: underline;">
+                <a href="https://icp.gov.moe/?keyword=20210688">萌ICP备20210688号</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-btn">
+    <a class="go-top" href="#"> <i
+            class="fa fa-angle-up"></i></a>
+    <!-- <a class="qrcode" href=""></i></a> -->
+    <!-- <div id="bottom-qrcode" class="modal panel-modal hide fade in" style="display: none;">
+        <h4>微信关注</h4>
+        <div class="panel-body"><img alt="微信关注" width="128" height="128" src="/wp-content/themes/runoob/images/qrcode.png"></div>
+      </div> -->
+</div>
+</body>
+
+</html>

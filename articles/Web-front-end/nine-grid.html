@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九宫格</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .main {
+            width: 330px;
+            height: 330px;
+            position: fixed;
+            display: inline-block;
+            background-image: url(./common-img/pic_050101.jpg);
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main" style="background-position: left top;"></div>
+        <div class="main" style="background-position: top center;"></div>
+        <div class="main" style="background-position: right top;"></div>
+        <div class="main" style="background-position: left center;"></div>
+        <div class="main" style="background-position: center;"></div>
+        <div class="main" style="background-position: right center;"></div>
+        <div class="main" style="background-position: left bottom;"></div>
+        <div class="main" style="background-position: bottom center;"></div>
+        <div class="main" style="background-position: bottom right;"></div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;">
+            <br>left top
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 110px;">
+            <br>top center
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 230px;">
+            <br>right top
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-top: 110px;">
+            <br>left center
+        </div>
+
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 110px;margin-top: 110px;">
+            <br>center
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 230px;margin-top: 110px;">
+            <br>right center
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-top: 230px;">
+            <br>left bottom
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 110px;margin-top: 230px;">
+            <br>bottom center
+        </div>
+        <div style="width: 109px;height: 109px;position: fixed;display: inline-block;color: white;font-size: 16px;margin-left: 230px;margin-top: 230px;">
+            <br>bottom right
+        </div>
+    </div>
+</body>
+
+</html>
